@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, Text } from 'react-native'
 
 const Button = props => {
-	let defaultButtonColor = props.btnColor ? props.btnColor : "#3949ab";
+	let defaultButtonColor = props.btnColor ? props.btnColor : "#596CF6";
 
 	const styles = {
 		regularButton: {
