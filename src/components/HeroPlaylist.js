@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, TouchableHighlight, Image } from "react-native";
 import { imageChooser } from "../helper";
+import Tag from "./Tag";
 
 const HeroPlaylist = props => {
   const { workout } = props;
@@ -47,12 +48,8 @@ const HeroPlaylist = props => {
           </Text>
         </View>
         <View>
-          <TouchableHighlight>
-            <Text>{workout.bodyPart}</Text>
-          </TouchableHighlight>
-          <TouchableHighlight>
-            <Text>{workout.equipment}</Text>
-          </TouchableHighlight>
+          <Tag tagText={workout.bodyPart} />
+          <Tag tagText={workout.equipment} />
         </View>
       </View>
     </View>
