@@ -14,7 +14,7 @@ export const fetchHeroDaily = dispatch => dispatch => {
     let day;
     AsyncStorage.getItem("day")
       .then(res => {
-        day = res !== 1 ? (day = 2) : (day = 2);
+        day = res !== 1 ? (day = 1) : (day = 2);
         let dailyworkout = snapshot
           .val()
           .filter(workout => workout.day === day || workout.day === "any");

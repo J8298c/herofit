@@ -3,8 +3,12 @@
  * @return {require('../assets/${key}')}
  */
 export const imageChooser = key => {
-	swtich(key) {
-		default:
-			return null
-	}
-}
+  switch (key) {
+    case "dumbbell":
+      return require("./assets/dumbbell.png");
+    case "barbell":
+      return require("./assets/barbell.png");
+    default:
+      return require("./assets/default.png");
+  }
+};
